@@ -33,3 +33,18 @@ EDA, cleaning, feature engineering, and feature selection are complete. Model tr
 pip install numpy pandas seaborn matplotlib scikit-learn scipy
 jupyter notebook insurance.ipynb
 ```
+
+---
+
+## Analysis architecture
+
+This repository is a notebook-based data science workflow. It reads the insurance charges dataset, explores the variables, prepares features, and evaluates feature selection for a regression task.
+
+```mermaid
+flowchart LR
+  A[insurance.csv] --> B[Notebook data inspection]
+  B --> C[Cleaning and exploratory analysis]
+  C --> D[Feature engineering]
+  D --> E[Feature selection]
+  E --> F[Regression preparation and results]
+```
